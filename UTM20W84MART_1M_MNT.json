@@ -1,0 +1,127 @@
+{
+   "orderedAxes" : [
+      "X",
+      "Y"
+   ],
+   "id" : "UTM20W84MART_1M_MNT",
+   "tileMatrices" : [
+      {
+         "cellSize" : 1000,
+         "tileHeight" : 256,
+         "pointOfOrigin" : [
+            -500,
+            12000500
+         ],
+         "matrixHeight" : 50,
+         "tileWidth" : 256,
+         "matrixWidth" : 4,
+         "scaleDenominator" : 3571428.57142857,
+         "id" : "0"
+      },
+      {
+         "id" : "1",
+         "tileWidth" : 256,
+         "scaleDenominator" : 1785714.28571429,
+         "matrixWidth" : 8,
+         "cellSize" : 500,
+         "matrixHeight" : 100,
+         "tileHeight" : 256,
+         "pointOfOrigin" : [
+            -250,
+            12000250
+         ]
+      },
+      {
+         "id" : "2",
+         "cellSize" : 250,
+         "matrixHeight" : 200,
+         "pointOfOrigin" : [
+            -125,
+            12000125
+         ],
+         "tileHeight" : 256,
+         "tileWidth" : 256,
+         "scaleDenominator" : 892857.142857143,
+         "matrixWidth" : 16
+      },
+      {
+         "tileWidth" : 256,
+         "matrixWidth" : 40,
+         "scaleDenominator" : 357142.857142857,
+         "cellSize" : 100,
+         "pointOfOrigin" : [
+            -50,
+            12000050
+         ],
+         "tileHeight" : 256,
+         "matrixHeight" : 500,
+         "id" : "3"
+      },
+      {
+         "id" : "4",
+         "scaleDenominator" : 267857.142857143,
+         "matrixWidth" : 54,
+         "tileWidth" : 256,
+         "matrixHeight" : 667,
+         "pointOfOrigin" : [
+            -37.5,
+            12000037.5
+         ],
+         "tileHeight" : 256,
+         "cellSize" : 75
+      },
+      {
+         "id" : "5",
+         "tileWidth" : 256,
+         "matrixWidth" : 80,
+         "scaleDenominator" : 178571.428571429,
+         "cellSize" : 50,
+         "pointOfOrigin" : [
+            -25,
+            12000025
+         ],
+         "tileHeight" : 256,
+         "matrixHeight" : 1000
+      },
+      {
+         "id" : "6",
+         "tileWidth" : 256,
+         "scaleDenominator" : 89285.7142857143,
+         "matrixWidth" : 160,
+         "cellSize" : 25,
+         "matrixHeight" : 2000,
+         "pointOfOrigin" : [
+            -12.5,
+            12000012.5
+         ],
+         "tileHeight" : 256
+      },
+      {
+         "id" : "7",
+         "tileWidth" : 256,
+         "matrixWidth" : 800,
+         "scaleDenominator" : 17857.1428571429,
+         "cellSize" : 5,
+         "pointOfOrigin" : [
+            -2.5,
+            12000002.5
+         ],
+         "tileHeight" : 256,
+         "matrixHeight" : 10000
+      },
+      {
+         "cellSize" : 1,
+         "tileHeight" : 256,
+         "pointOfOrigin" : [
+            -0.5,
+            12000000.5
+         ],
+         "matrixHeight" : 50000,
+         "tileWidth" : 256,
+         "matrixWidth" : 4000,
+         "scaleDenominator" : 3571.42857142857,
+         "id" : "8"
+      }
+   ],
+   "crs" : "IGNF:UTM20W84MART"
+}
