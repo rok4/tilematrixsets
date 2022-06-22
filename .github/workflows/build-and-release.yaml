@@ -1,0 +1,50 @@
+name: Build and release
+
+on:
+  push:
+    tags:
+      - '**'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Organize files
+        run: |
+          mkdir -p build/etc/rok4/tilematrixsets
+          cp *.json build/etc/rok4/tilematrixsets/
+
+      - name: Build debian package
+        id: build_debian
+        uses: jiro4989/build-deb-action@v2
+        with:
+          package: rok4-tilematrixsets
+          package_root: build
+          maintainer: Géoportail<tout_rdev@ign.fr>
+          version: ${{ github.ref }}
+          arch: 'all'
+          desc: 'Tile Matrix Sets define grids to process then broadcast geographical data as tile'
+
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ github.ref }}
+          release_name: Release ${{ github.ref }}
+          draft: false
+          prerelease: false
+
+      - name: Add debian package to release
+        id: upload-release-asset 
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./${{ steps.build_debian.outputs.file_name }}
+          asset_name: ${{ steps.build_debian.outputs.file_name }}
+          asset_content_type: application/vnd.debian.binary-package
