@@ -1,0 +1,5 @@
+Package: rok4-tilematrixsets
+Architecture: all
+Maintainer: Géoportail<tout_rdev@ign.fr>
+Homepage: https://github.com/rok4/tilematrixsets
+Description: Tile Matrix Sets define grids to process then broadcast geographical data as tile
