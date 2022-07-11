@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
 
@@ -23,7 +23,7 @@ jobs:
           package: rok4-tilematrixsets
           package_root: build
           maintainer: Géoportail<tout_rdev@ign.fr>
-          version: ${{ github.ref }}
+          version: ${{ github.ref_name }}
           arch: 'all'
           desc: 'Tile Matrix Sets define grids to process then broadcast geographical data as tile'
 
@@ -34,7 +34,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           tag_name: ${{ github.ref }}
-          release_name: Release ${{ github.ref }}
+          release_name: Release ${{ github.ref_name }}
           body_path: CHANGELOG.md
           draft: false
           prerelease: false
@@ -47,6 +47,6 @@ jobs:
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_path: ./${{ steps.build_debian.outputs.file_name }}
-          asset_name: ${{ steps.build_debian.outputs.file_name }}
+          asset_name: rok4-tilematrixsets-${{ github.ref_name }}-linux-all.deb
           asset_content_type: application/vnd.debian.binary-package
           
