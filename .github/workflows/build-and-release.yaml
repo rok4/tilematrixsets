@@ -13,8 +13,8 @@ jobs:
 
       - name: Organize files
         run: |
-          mkdir -p build/etc/rok4/tilematrixsets
-          cp *.json build/etc/rok4/tilematrixsets/
+          mkdir -p build/usr/share/rok4/tilematrixsets
+          cp *.json build/usr/share/rok4/tilematrixsets/
 
       - name: Build debian package
         id: build_debian
