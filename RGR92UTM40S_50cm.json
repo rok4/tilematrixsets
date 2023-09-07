@@ -246,7 +246,7 @@
             12000000
          ],
          "matrixHeight" : 84081,
-         "cellSize" : 1,
+         "cellSize" : 0.5,
          "matrixWidth" : 10080,
          "scaleDenominator" : 3571.42857142857,
          "tileWidth" : 256,
