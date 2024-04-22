@@ -1,10 +1,21 @@
-# Styles ROK4
 
-## Summary
+## 4.3
 
-Nouvel emplacement des TMS lors de leur installation via le paquet debian
+### [Added]
 
-## Changelog
+* Duplication de TMS IGNF en leur équivalent EPSG :
+    * IGNF:LAMB93 -> EPSG:2154
+    * IGNF:UTM22RGFG95 -> EPSG:2972
+    * IGNF:RGR92UTM40S -> EPSG:2975
+    * IGNF:RGM04UTM38S -> EPSG:4471
+
+## 4.2
+
+### [Fixed]
+
+* Correction du niveau du bas du TMS RGR92UTM40S_50cm
+
+## 4.1
 
 ### [Changed]
 
