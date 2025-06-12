@@ -1,3 +1,9 @@
+## 4.6
+
+### [Changed]
+
+* Passage sur ubuntu 24.04 pour la compilation du paquet debian
+
 ## 4.5
 
 ### [Changed]
