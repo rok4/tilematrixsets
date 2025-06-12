@@ -1,3 +1,9 @@
+## 4.5
+
+### [Changed]
+
+* Changement du TMS '2154_1M_MNT' : l'origine est décalée pour que les valeurs des données RGEAlti, valeurs sur le maillage, soit bien la valeur au centre du pixel dans les données de la pyramide (au niveau du bas)
+
 ## 4.4
 
 * Ajout du TMS `2154_50cm_MNT` : l'origine est décalée pour que les valeurs des données LidarHD, valeurs sur le maillage, soit bien la valeur au centre du pixel dans les données de la pyramide (au niveau du bas).
