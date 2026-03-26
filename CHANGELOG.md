@@ -1,3 +1,9 @@
+## 4.7
+
+### [Added]
+
+* Ajout du TMS `2154_50cm_MNx` : l'origine est décalée pour que les valeurs des données LidarHD, valeurs sur le maillage, soit bien la valeur au centre du pixel dans les données de la pyramide (au niveau du bas).
+
 ## 4.6
 
 ### [Changed]
