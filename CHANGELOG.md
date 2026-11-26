@@ -1,3 +1,18 @@
+
+## 4.8
+
+### [Added]
+
+* Ajout des TMS pour géer les territoires ultra-marins :
+    * 10674_50cm.json
+    * 10674_50cm_MNx.json
+    * 2972_50cm_MNx.json
+    * 2975_50cm_MNx.json
+    * 4467_50cm.json
+    * 4467_50cm_MNx.json
+    * 5490_50cm.json
+    * 5490_50cm_MNx.json
+
 ## 4.7
 
 ### [Added]
